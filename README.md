@@ -6,7 +6,7 @@
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+All files should be downloaded and saved inside the project directory on your C:/. To open run project you need to open with any browser the index.hmtl file in the project directory. To make any changes you need to open the source code on Visual Studio code or any other code editor of your choice. 
 
 ## Usage
 
@@ -35,7 +35,7 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 ## Features
 
-If your project has a lot of features, list them here.
+In this project you'll find basic concetps of HTML, CSS and simples Features as hover efects and color filter.
 
 
 ## Tests
