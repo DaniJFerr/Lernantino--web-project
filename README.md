@@ -20,7 +20,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-- This project is part of Bootcamp coruse provide by Trillogy and EDX.
+- This project is part of Bootcamp course provide by Trillogy and EDX.
 
 ## License
 
@@ -35,7 +35,7 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 
 ## Features
 
-In this project you'll find basic concetps of HTML, CSS and simples Features as hover efects and color filter.
+In this project you'll find basic concetps of HTML, CSS and simples Features as hover and color filter image effects.
 
 
 ## Tests
