@@ -9,7 +9,6 @@ body {
   line-height: 1.5;
 }
 
-
 h3{
   margin: 0;
   padding: 0;
@@ -47,15 +46,15 @@ header h1{
 }
 
 nav{
-  width: 600px;
+  width: 800px;
   position: absolute;
   top: 0%;
-  left: 60%;
+  left: 55%;
 }
 
 nav ul{
   padding: 20px auto;
-  margin: 20px auto ;
+  margin: 20px 20px ;
 }
 
 nav li{
@@ -66,6 +65,7 @@ nav li{
 
 nav a {
   color: rgb(141, 212, 221);
+  margin: auto 10px;
   list-style: none;
   font-size: 2em;
   padding: 0 0 10px 0;
@@ -73,7 +73,26 @@ nav a {
   border-bottom: 5px;
   border-style: none none solid none;
   border-color: rgb(141, 212, 221);
+  transition: 100ms;
+  transform-origin: center;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
+
+nav a:hover {
+  position:static;
+  color: rgb(48, 46, 46);
+  background-color: rgb(141, 212, 221);
+  list-style: none;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 5px 10px 10px 10px;
+  text-decoration: none;
+
+}
+
 
 /*-- hero banner --*/
 
@@ -140,7 +159,10 @@ nav a {
 /*-- portfolio container -->*/
 
 .portifolio {
+   display: grid;
    position: relative;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap: 10px;
    width: 80%;
    height: auto;
    left: 17%;
@@ -148,7 +170,6 @@ nav a {
    border-style: none none none solid;
    border-color: rgb(55, 115, 124);
   }
-
 
 .title01{
   position: absolute;
@@ -161,7 +182,6 @@ nav a {
 
 }
 
-
 .title02{
   position: absolute;
   text-align: center;
@@ -172,7 +192,7 @@ nav a {
   top: 30%;
 }
 
-.work01{
+.mainwork{
   position: relative;
   width: 1222px;
   height: 400px;
@@ -182,7 +202,7 @@ nav a {
   border-style: solid;
 }
 
-.work01 img{
+.mainwork img{
   width: 1207px;
   height: 385px;
   left: 5%;
@@ -193,116 +213,44 @@ nav a {
   filter: grayscale(100%);
 }
 
-.work01:hover img{
+.mainwork:hover img{
   filter: grayscale(0%);
   transition: 500ms;
   opacity: 80%;
 }
 
-.work02{
-  position: absolute;
-  margin: 10px 10px 0px 0px;
-  width: 600px;
-  height: 200px;
-  left: 5%; 
-  border-width: 7px;
-  border-color: rgb(141, 212, 221);
-  border-style: solid;
+.mainwork:nth-child(1){
+  grid-column: span 5;
 }
 
-.work02 img{
-  width: 586px;
-  height: 186px;
-  object-position: -50% 0;
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
+.work:nth-child(2),
+.work:nth-child(3),
+.work:nth-child(4),
+.work:nth-child(5){
+  grid-column: span 2;
 }
 
-.work02:hover img{
-  filter: grayscale(0%);
-  transition: 500ms;
-  opacity: 80%;
-}
-
-.work03{
-  margin: 10px 10px 0px 0px;
+.work{
   position: relative;
-  width: 600px;
-  height: 200px;
-  left: 46%;
-  border-width: 7px;
-  border-color: rgb(141, 212, 221);
-  border-style: solid;
-}
-
-.work03 img{
-  width: 586px;
-  height: 186px;
-  background-size: contain;
-  object-position: -50% 0;
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
-}
-
-.work03:hover img{
-  filter: grayscale(0%);
-  transition: 500ms;
-  opacity: 80%;
-}
-
-.work04{
   margin: 10px 10px 0px 0px;
-  position: absolute;
   width: 600px;
   height: 200px;
-  left: 5%;
+  left: 75px; 
   border-width: 7px;
   border-color: rgb(141, 212, 221);
   border-style: solid;
 }
 
-.work04 img{
-  width: 586px;
-  height: 186px;
-  object-position: -20% 0;
+.work img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
 }
 
-.work04:hover img{
-  filter: grayscale(0%);
-  transition: 500ms;
-  opacity: 80%;
-}
-
-.work05{
-  margin: 10px 10px 0px 0px;
-  position: relative;
-  width: 600px;
-  height: 200px;
-  left: 46%;
-  border-width: 7px;
-  border-color: rgb(141, 212, 221);
-  border-style: solid;
-}
-
-.work05 img{
-  width: 586px;
-  height: 186px;
-  object-position: 20%;
-  object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
-}
-
-.work05:hover img{
+.work:hover img{
   filter: grayscale(0%);
   transition: 500ms;
   opacity: 80%;
@@ -323,7 +271,6 @@ nav a {
   border-style: none none none solid;
   border-color: rgb(55, 115, 124);
 }
-
 
 .contacts ul{
   width: 85%;
