@@ -90,7 +90,6 @@ nav a:hover {
   font-size: 2em;
   padding: 5px 10px 10px 10px;
   text-decoration: none;
-
 }
 
 
@@ -270,6 +269,7 @@ nav a:hover {
   border-left: 5px;
   border-style: none none none solid;
   border-color: rgb(55, 115, 124);
+  
 }
 
 .contacts ul{
@@ -290,7 +290,25 @@ nav a:hover {
   border-bottom: 5px;
   border-style: none none solid none;
   border-color: rgb(141, 212, 221);
+  transition: 100ms;
+  transform-origin: center;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
+
+.contacts a:hover{
+position:static;
+color: rgb(48, 46, 46);
+background-color: rgb(141, 212, 221);
+list-style: none;
+font-weight: bold;
+font-size: 1em;
+padding: 5px 10px 10px 10px;
+text-decoration: none;
+}
+
 
 /*-- footer --*/
 
