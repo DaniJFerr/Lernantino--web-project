@@ -31,17 +31,16 @@ header{
   width: auto;
   height: 100px;
   margin-bottom: 0%;
-  padding-bottom: 0%;
-  
+  padding-bottom: 0%; 
 }
 
 header h1{
   color: rgb(48, 46, 46);;
   font-size: 3em;
   max-width: 300px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   background-color: rgb(141, 212, 221);
-  text-align: right;
+  text-align: center;
   margin: 0 0;
 }
 
@@ -63,7 +62,7 @@ nav li{
   margin: auto 5px;
 }
 
-nav a {
+nav a{
   color: rgb(141, 212, 221);
   margin: auto 10px;
   list-style: none;
@@ -92,7 +91,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-
 /*-- hero banner --*/
 
 .hero-banner{
@@ -110,12 +108,13 @@ nav a:hover {
 .subtitle{
   position: relative;
   max-width: 400px;
-  left: 75%;
-  top: 70%;
+  left: 68%;
+  top: 60%;
   text-align: center;
 }
 
 .subtitle h2{
+  align-items: center;
   color: rgb(48, 46, 46);;
   font-size: 2.5em;
   background-color: rgb(141, 212, 221);
@@ -126,7 +125,8 @@ nav a:hover {
 .page-section {
   width: auto ;
   height: auto;
-  margin: 20px 0;
+  margin: 20px auto;
+  padding: auto;
 }
 
 .page-section h2{
@@ -135,15 +135,15 @@ nav a:hover {
   text-align: right;
   font-size: 3em;
   width: 200px;
-  margin:  0 0 0 100px;
+  margin:  0 0 0 40px;
   padding: 0 5px 0 0;
 }
 
 .text-content{
   margin: 20px 0;
-  padding: 0 0 0 75px;
-  width: 68%;
-  left: 17%;
+  padding: 0 0 0 50px;
+  width: 75%;
+  left: 15%;
   position: relative;
   border-left: 5px;
   border-style: none none none solid;
@@ -157,7 +157,82 @@ nav a:hover {
 
 /*-- portfolio container -->*/
 
-.portifolio {
+#portifolio {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  left: 15%;
+  padding: 0 0 0 50px;
+  border-left: 5px;
+  border-style: none none none solid;
+  border-color: rgb(55, 115, 124);
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "work01 work01"
+  "work02 work03"
+  "work04 work05"
+  ;
+}
+
+#work01 {
+  grid-area: work01;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#work02 {
+  grid-area: work02;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#work03 {
+  grid-area: work03;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#work04 {
+  grid-area: work04;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#work05 {
+  grid-area: work05;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+
+.workGridArea {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  border-width: 7px;
+  border-color: rgb(141, 212, 221);
+  border-style: solid;
+}
+
+#work01:hover, #work02:hover, #work03:hover, 
+#work04:hover, #work05:hover{
+  filter: grayscale(0%);
+  transition: 500ms;
+  opacity: 80%;
+} 
+
+.heading{
+  position: relative;
+  text-align: center;
+  padding: 8px 8px;
+  width: 150px;
+  height: 70px;
+  background-color: rgb(141, 212, 221);
+  top: 40%;
+}
+/* .portifolio {
    display: grid;
    position: relative;
    grid-template-columns: repeat(5, 1fr);
@@ -170,18 +245,7 @@ nav a:hover {
    border-color: rgb(55, 115, 124);
   }
 
-.title01{
-  position: absolute;
-  text-align: center;
-  width: 140px;
-  height: 70px;
-  padding: 8px 8px;
-  background-color: rgb(141, 212, 221);
-  top: 70%;
-
-}
-
-.title02{
+.heading{
   position: absolute;
   text-align: center;
   padding: 8px 8px;
@@ -202,8 +266,8 @@ nav a:hover {
 }
 
 .mainwork img{
-  width: 1207px;
-  height: 385px;
+  width: 100%;
+  height: 100%;
   left: 5%;
   object-position: -20% 0;
   object-fit: cover;
@@ -229,17 +293,6 @@ nav a:hover {
   grid-column: span 2;
 }
 
-.work{
-  position: relative;
-  margin: 10px 10px 0px 0px;
-  width: 600px;
-  height: 200px;
-  left: 75px; 
-  border-width: 7px;
-  border-color: rgb(141, 212, 221);
-  border-style: solid;
-}
-
 .work img{
   width: 100%;
   height: 100%;
@@ -253,7 +306,7 @@ nav a:hover {
   filter: grayscale(0%);
   transition: 500ms;
   opacity: 80%;
-}
+} */
 
 /*-- contact --*/
 
@@ -265,11 +318,10 @@ nav a:hover {
   padding: 70px 0;
   width: 80%;
   height: 145px;
-  left: 17%;
+  left: 15%;
   border-left: 5px;
   border-style: none none none solid;
   border-color: rgb(55, 115, 124);
-  
 }
 
 .contacts ul{
@@ -298,22 +350,164 @@ nav a:hover {
   transition: all 0.4s ease-in;
 }
 
-.contacts a:hover{
-position:static;
-color: rgb(48, 46, 46);
-background-color: rgb(141, 212, 221);
-list-style: none;
-font-weight: bold;
-font-size: 1em;
-padding: 5px 10px 10px 10px;
-text-decoration: none;
+  .contacts a:hover{
+  position:static;
+  color: rgb(48, 46, 46);
+  background-color: rgb(141, 212, 221);
+  list-style: none;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 5px 10px 10px 10px;
+  text-decoration: none;
+  }
+
+  /*-- footer --*/
+
+  footer{
+  color: rgb(48, 46, 46);;
+  margin: 50px auto 10px auto;
+  text-align:center;
+  }
+
+
+@media only screen and (max-width: 1648px) {
+
+  #portifolio {
+      position: relative;
+      padding: 20px 0 0 0px;
+      margin: 20px 0;
+      left: 10%;
+      border-top: 5px;
+      border-style: solid none none none;
+      border-color: rgb(55, 115, 124);
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "work01"
+      "work02"
+      "work03"
+      "work04" 
+      "work05"
+     }
+   
+   .page-section h2{
+    position: relative;
+    color: rgb(48, 46, 46);
+    text-align: center;
+    font-size: auto;
+    width: auto;
+    left: auto;
+    margin:  auto ;
+    padding:autO;
+  }
+/* 
+  .title01{
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    height: 70px;
+    padding: 8px 8px;
+    background-color: rgb(141, 212, 221);
+    top: 30%;
+  }
+  
+
+  .mainwork{
+    position: relative;
+    width: 100%;
+    height: 5%;
+    left: 0%;
+  }
+  
+  /* .work{
+    position: relative;
+    margin: 20px 0px;
+    width: 100%;
+    height: 5%;
+    left: 0%; 
+  }
+   */
+  .text-content{
+    margin: 20px 0;
+    padding: 20px 0 0 0px;
+    width: 75%;
+    left: 10%;
+    position: relative;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: rgb(55, 115, 124);
+  }
+
+  .subtitle{
+    position: relative;
+    max-width: 350px;
+    left: auto;
+    top: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contacts{
+    text-align: center;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 15px 0;
+    height: 50%;
+    left: 10%;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: rgb(55, 115, 124);
 }
 
+  .contacts ul{
+    width: auto;
+    margin: 0 25px;
+    padding: 0 20px;
+  }
 
-/*-- footer --*/
+  .contacts li{
+    display: block;
+    text-decoration: none;
+    padding: 0 20px 30px;
+  }
 
-footer{
-color: rgb(48, 46, 46);;
- margin: 50px auto 10px auto;
- text-align:center;
+header{
+  width: auto;
+  height: 115px;
+}
+
+header h1{
+  font-size: 3em;
+  max-width: 500px;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+  nav{
+    width: auto;
+    position: relative;
+    top: 0%;
+    left: auto;
+    display: inline;
+    margin: auto;
+  }
+  nav ul{
+    margin: 0 0;
+  }
+  nav a{
+    position: relative;
+    margin: auto 5px;
+    font-size: 0.9em;
+    padding: 0 0 auto 0;
+  }
+  
+  nav a:hover {
+    position:relative;
+    font-size: 1em;
+    padding: 5px 10px 10px 5px;
+    text-decoration: none;
+  }
+  
 }
