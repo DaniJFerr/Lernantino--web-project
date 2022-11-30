@@ -179,26 +179,31 @@ nav a:hover {
 #work01 {
   grid-area: work01;
   background-image: url("../images/02-portfolio-4.jpg");
+  opacity: 60%;
 }
 
 #work02 {
   grid-area: work02;
   background-image: url("../images/02-portfolio-1.jpg");
+  opacity: 60%;
 }
 
 #work03 {
   grid-area: work03;
   background-image: url("../images/02-portfolio-2.jpg");
+  opacity: 60%;
 }
 
 #work04 {
   grid-area: work04;
   background-image: url("../images/02-portfolio-3.jpg");
+  opacity: 60%;
 }
 
 #work05 {
   grid-area: work05;
   background-image: url("../images/02-run-buddy.jpg");
+  opacity: 60%;
 }
 
 
@@ -220,7 +225,7 @@ nav a:hover {
 #work04:hover, #work05:hover{
   filter: grayscale(0%);
   transition: 500ms;
-  opacity: 80%;
+  opacity: 100%;
 } 
 
 .heading{
