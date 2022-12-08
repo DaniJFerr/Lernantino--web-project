@@ -206,7 +206,6 @@ nav a:hover {
   opacity: 60%;
 }
 
-
 .workGridArea {
   position: relative;
   background-position: center;
@@ -215,7 +214,6 @@ nav a:hover {
   margin: 5px;
   object-fit: cover;
   cursor: pointer;
-  position: relative;
   border-width: 7px;
   border-color: rgb(141, 212, 221);
   border-style: solid;
@@ -499,11 +497,11 @@ header h1{
     margin: auto;
   }
   nav ul{
-    margin: 0 0;
+    margin: 0 10%;
   }
   nav a{
     position: relative;
-    margin: auto 5px;
+    margin: auto 7px;
     font-size: 0.9em;
     padding: 0 0 auto 0;
   }
