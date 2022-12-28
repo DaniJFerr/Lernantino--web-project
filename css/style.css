@@ -396,9 +396,10 @@ header h1{
     left: auto;
     display: inline;
     margin: auto;
+
   }
   nav ul{
-    margin: 0 10%;
+    margin: 0 2%;
   }
   nav a{
     position: relative;
